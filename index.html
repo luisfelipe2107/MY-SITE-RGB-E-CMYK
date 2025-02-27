@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB e CMYK: Sistemas de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RGB e CMYK: O que são e como funcionam</h1>
+        <p>Entenda como os sistemas de cores RGB e CMYK são usados em diferentes contextos, como em telas digitais e impressões.</p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que são RGB e CMYK?</h2>
+            <p>RGB (Red, Green, Blue) e CMYK (Cyan, Magenta, Yellow, Key) são sistemas usados para representar cores de maneiras diferentes. O sistema RGB é utilizado principalmente em telas digitais, enquanto o sistema CMYK é usado em impressão. Vamos explorar como cada um deles funciona.</p>
+        </section>
+
+        <section id="rgb">
+            <h2>RGB: O Sistema de Cores Aditivo</h2>
+            <p>O modelo RGB é um sistema aditivo de cores, ou seja, ele começa com a ausência de cor (preto) e cria cores a partir da adição de luz nas cores primárias: Vermelho (R), Verde (G) e Azul (B). Ao adicionar intensidades diferentes de luz dessas cores, criamos todas as outras cores visíveis.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/RGB_color_model.svg" alt="Modelo RGB">
+            <h3>Como Funciona?</h3>
+            <p>No modelo RGB, cada cor é representada por três valores, que podem variar de 0 a 255. Esses valores correspondem à intensidade de cada cor primária (R, G, B). O valor "0" significa a ausência de cor, e o valor "255" significa a máxima intensidade de luz.</p>
+            <p>Por exemplo:</p>
+            <ul>
+                <li>rgb(255, 0, 0) - Vermelho</li>
+                <li>rgb(0, 255, 0) - Verde</li>
+                <li>rgb(0, 0, 255) - Azul</li>
+                <li>rgb(255, 255, 255) - Branco</li>
+                <li>rgb(0, 0, 0) - Preto</li>
+            </ul>
+        </section>
+
+        <section id="cmyk">
+            <h2>CMYK: O Sistema de Cores Subtrativo</h2>
+            <p>O modelo CMYK é um sistema subtrativo de cores, ou seja, ele começa com uma folha branca e cria cores a partir da remoção de luz. As cores primárias no sistema CMYK são Ciano (C), Magenta (M), Amarelo (Y) e Preto (K), sendo o "K" utilizado para obter um preto mais intenso.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/CMYK_model.svg" alt="Modelo CMYK">
+            <h3>Como Funciona?</h3>
+            <p>No modelo CMYK, cada cor é representada por uma porcentagem de cada tinta: Ciano, Magenta, Amarelo e Preto. O valor varia de 0% a 100%, sendo 0% a ausência de tinta e 100% a intensidade máxima.</p>
+            <p>Por exemplo:</p>
+            <ul>
+                <li>cmyk(100%, 0%, 0%, 0%) - Ciano</li>
+                <li>cmyk(0%, 100%, 0%, 0%) - Magenta</li>
+                <li>cmyk(0%, 0%, 100%, 0%) - Amarelo</li>
+                <li>cmyk(0%, 0%, 0%, 100%) - Preto</li>
+            </ul>
+            <p>Uma mistura de cores no sistema CMYK resulta na subtração de luz, o que significa que, ao adicionar mais cores, a luz vai diminuindo.</p>
+        </section>
+
+        <section id="comparacao">
+            <h2>Comparação entre RGB e CMYK</h2>
+            <p>Ambos os sistemas são usados para criar cores, mas em contextos diferentes:</p>
+            <ul>
+                <li><strong>RGB:</strong> Ideal para telas digitais como monitores, TVs e câmeras digitais. Funciona com luzes aditivas.</li>
+                <li><strong>CMYK:</strong> Ideal para impressões em papel e outras superfícies. Funciona com pigmentos e é um sistema subtrativo.</li>
+            </ul>
+            <p>Por exemplo, ao criar uma imagem digital, utilizamos RGB, enquanto ao imprimir essa imagem, utilizamos o sistema CMYK para obter as cores desejadas na impressão.</p>
+            <img src="https://www.blog.pawelgawronski.com/wp-content/uploads/2020/09/RGB-vs-CMYK.png" alt="Comparação RGB vs CMYK">
+        </section>
+
+        <section id="exemplos">
+            <h2>Exemplos de Cores nos Modelos RGB e CMYK</h2>
+            <p>Aqui estão alguns exemplos de cores e seus valores em RGB e CMYK:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cor</th>
+                        <th>RGB</th>
+                        <th>CMYK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vermelho</td>
+                        <td>rgb(255, 0, 0)</td>
+                        <td>cmyk(0%, 100%, 100%, 0%)</td>
+                    </tr>
+                    <tr>
+                        <td>Verde</td>
+                        <td>rgb(0, 255, 0)</td>
+                        <td>cmyk(100%, 0%, 100%, 0%)</td>
+                    </tr>
+                    <tr>
+                        <td>Azul</td>
+                        <td>rgb(0, 0, 255)</td>
+                        <td>cmyk(100%, 100%, 0%, 0%)</td>
+                    </tr>
+                    <tr>
+                        <td>Preto</td>
+                        <td>rgb(0, 0, 0)</td>
+                        <td>cmyk(0%, 0%, 0%, 100%)</td>
+                    </tr>
+                    <tr>
+                        <td>Branco</td>
+                        <td>rgb(255, 255, 255)</td>
+                        <td>cmyk(0%, 0%, 0%, 0%)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Referências:</p>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/RGB">Wikipedia - RGB</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/CMYK">Wikipedia - CMYK</a></li>
+        </ul>
+        <p>Desenvolvido por Alexandre Nassar de Peder</p>
+    </footer>
+</body>
+
+</html>
